@@ -1,5 +1,5 @@
 # M2pred
-Predicting RNA solvent accessibility from multi-scale context feature via multi-shot neural network framework
+Predicting RNA solvent accessibility from multi-scale context feature via multi-shot neural network
 
 ## Pre-requisite:  
    - Linux system
@@ -15,20 +15,17 @@ Predicting RNA solvent accessibility from multi-scale context feature via multi-
 
 *Install and configure the softwares of python3.7, Pytorch, Infernal, RNAfold, LinearPartition, and nt in your Linux system. Please make sure that python3 includes the modules of 'os', 'math', 'numpy', 'configparser', 'numba', 'random', 'subprocess', 'sys', and 'shutil'. If any one modules does not exist, please using 'pip install xxx' command install the python revelant module. Here, "xxx" is one module name.
 
-*Download this repository at https://github.com/XueQiangFan/I-RNAsol (80.1MB). Then, uncompress it and run the following command lines on Linux System.
+*Download this repository at https://github.com/XueQiangFan/M2pred. Then, uncompress it and run the following command lines on Linux System.
 
 ~~~
-  $ jar xvf I-RNAsol-main.zip
+  $ jar xvf M2pred-main.zip
   $ chmod -R 777 ./I-RNAsol-main.zip
-  $ cd ./I-RNAsol-main
-  $ java -jar ./Util/FileUnion.jar ./save_model/ ./save_model.zip
-  $ rm -rf ./save_model
+  $ cd ./M2pred-main
   $ unzip save_model.zip 
-  $ cd ../
 ~~~
 Here, you will see one configuration files.   
-*Configure the following tools or databases in I-RNAsol.config  
-  The file of "I-RNAsol.config" should be set as follows:
+*Configure the following tools or databases in M2pred.config  
+  The file of "M2pred.config" should be set as follows:
 - Infernal
 - LinearPartition
 - RNAfold
@@ -58,8 +55,8 @@ Note: Make sure there is enough space on the system as NCBI's nt database is of 
 
 ## Update History:
 
-First release 2022-02-13
+First release 2022-02-21
 
 ## References
 
-[1] Xue-Qiang Fan, Jun Hu*, Ning-Xin Jia, Dong-Jun Yu*, and Gui-Jun Zhang*. Predicting RNA solvent accessibility from multi-scale context feature via multi-shot neural network framework.
+[1] Xue-Qiang Fan, Jun Hu*, Yu-Xuan Tang, Ning-Xin Jia, Dong-Jun Yu*, and Gui-Jun Zhang*. Predicting RNA solvent accessibility from multi-scale context feature via multi-shot neural network.
