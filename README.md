@@ -51,7 +51,7 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 | 3. |  *To run M2pred on CPU:*<br /> <br /> `conda install pytorch torchvision torchaudio cpu only -c pytorch` <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
 | 4. | `while read p; do conda install --yes $p; done < requirements.txt` | 
 
-## Run I-RNAsol 
+## Run M2pred 
 ### run: python main.py -n RNA name -s RNA sequence -o result path
 ~~~
     For example:
