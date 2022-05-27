@@ -3,12 +3,12 @@ Predicting RNA solvent accessibility from multi-scale context feature via multi-
 
 ## Pre-requisite:  
    - Linux system
-   - python3.7
-   - pytorch [pytorch version 1.3.1](https://pytorch.org/)
-   - Infernal [infernal-1.1.3](http://eddylab.org/infernal/infernal-1.1.3.tar.gz)
-   - RNAfold [ViennaRNA-2.4.18](https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_4_x/ViennaRNA-2.4.18.tar.gz)
-   - LinearPartition [LinearPartition](https://github.com/LinearFold/LinearPartition.git/)
-   - nt [nt](https://ftp.ncbi.nih.gov/blast/db/)  
+   - [Python3.7](https://docs.python-guide.org/starting/install3/linux/)
+   - [pytorch version 1.3.1](https://pytorch.org/)
+   - [infernal-1.1.3](http://eddylab.org/infernal/infernal-1.1.3.tar.gz)
+   - [ViennaRNA-2.4.18](https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_4_x/ViennaRNA-2.4.18.tar.gz)
+   - [LinearPartition](https://github.com/LinearFold/LinearPartition.git/)
+   - [nt](https://ftp.ncbi.nih.gov/blast/db/)  
     
 
 ## Installation:
@@ -48,7 +48,7 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 | :- | :--- |
 | 1. |  `conda create -n venv python=3.7` |
 | 2. |  `conda activate venv` | 
-| 3. |  *To run M2pred on CPU:*<br /> <br /> `conda install pytorch torchvision torchaudio cpuonly -c pytorch` <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
+| 3. |  *To run M2pred on CPU:*<br /> <br /> `conda install pytorch torchvision torchaudio cpu only -c pytorch` <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |
 | 4. | `while read p; do conda install --yes $p; done < requirements.txt` | 
 
 ## Run I-RNAsol 
@@ -60,11 +60,11 @@ Either follow **virtualenv** column steps or **conda** column steps to create vi
 
 ## The RNA solvent accessibility result
 
-*The protein solvent accessibility result of each rsidue should be found in the outputted file, i.e., " protein name +.rsa". In each result file, where "NO" is the position of each residue in your RNA, where "AA" is the name of each residue in your RNA, where "RSA" is the predicted relative accessible surface area of each residue in your RNA, and where "ASA" is the predicted accessible surface area of each nucleotide in your RNA.
+*The RNA solvent accessibility result of each rsidue should be found in the outputted file, i.e., " RNA name +.rsa". In each result file, where "NO" is the position of each residue in your RNA, where "AA" is the name of each residue in your RNA, where "RSA" is the predicted relative accessible surface area of each residue in your RNA, and where "ASA" is the predicted accessible surface area of each nucleotide in your RNA.
 
 ## Update History:
 
-First release 2022-02-21
+First release 2022-05-27
 
 ## References
 
