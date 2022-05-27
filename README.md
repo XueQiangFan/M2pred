@@ -42,6 +42,15 @@ Here, you will see one configuration files.
 ~~~
 Note: Make sure there is enough space on the system as NCBI's nt database is of size around 333 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
+Either follow **virtualenv** column steps or **conda** column steps to create virtual environment and to install I-DNAN6mA dependencies given in table below:<br />
+
+|  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
+| :- | :--- |
+| 3. |  `conda create -n venv python=3.7` |
+| 4. |  `conda activate venv` | 
+| 5. |  *To run I-DNAN6mA on CPU:*<br /> <br /> `conda install pytorch torchvision torchaudio cpuonly -c pytorch` <br /> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *or* <br /> <br />*To run I-DNAN6mA on GPU:*<br /> <br /> `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch` |
+| 6. | `while read p; do conda install --yes $p; done < requirements.txt` | 
+
 ## Run I-RNAsol 
 ### run: python main.py -n RNA name -s RNA sequence -o result path
 ~~~
