@@ -42,7 +42,7 @@ Here, you will see one configuration files.
 ~~~
 Note: Make sure there is enough space on the system as NCBI's nt database is of size around 333 GB after extraction and it can take couple of hours to download depending on the internet speed. In case of any issue, please rerfer to https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
-Either follow **virtualenv** column steps or **conda** column steps to create virtual environment and to install I-DNAN6mA dependencies given in table below:<br />
+Either follow **conda** column steps to create virtual environment and to install M2pred dependencies given in table below:<br />
 
 |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conda |
 | :- | :--- |
